@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "solution": "Our solution",
+    "howItWorks": "How it’s works",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "bookDemo": "Book demo"
+  },
+  "hero": {
+    "badgeNew": "New",
+    "badgeText": "BUILT FOR CAR RENTAL AGENCIES",
+    "title": "Stop losing bookings. Even at 2AM.",
+    "description": "Your AI agent instantly qualifies leads, checks availability, and converts conversations into revenue.",
+    "ctaPrimary": "Start & Scale with Botwise",
+    "ctaSecondary": "Try botwise live"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "solution": "Notre solution",
+    "howItWorks": "Comment ça marche",
+    "pricing": "Tarifs",
+    "faq": "FAQ",
+    "bookDemo": "Réserver une démo"
+  },
+  "hero": {
+    "badgeNew": "New",
+    "badgeText": "CONÇU POUR LES AGENCES DE LOCATION DE VOITURES",
+    "title": "Arrêtez de perdre des réservations. Même à 2h du matin.",
+    "description": "Votre agent IA qualifie instantanément les prospects, vérifie la disponibilité et transforme les conversations en revenus.",
+    "ctaPrimary": "Démarrer et évoluer avec Botwise",
+    "ctaSecondary": "Essayer Botwise en direct"
+  }
+}
