@@ -389,7 +389,8 @@
     width: 100%;
     max-width: 1041px;
     margin: 0 auto;
-    padding: 0 20px 80px;
+    padding: 0 20px 40px;
+    /* Reduced from 80px */
     position: relative;
     z-index: 2;
 }
@@ -574,5 +575,102 @@
     .playButton {
         width: 56px;
         height: 56px;
+    }
+}
+
+/* ========== Trusted By Section ========== */
+.trustedBySection {
+    width: 100%;
+    max-width: 900px;
+    /* Matches dashboardWrapper max-width */
+    margin: 20px auto 100px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.trustedByText {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #94A3B8;
+    margin-bottom: 24px;
+    letter-spacing: 0.02em;
+}
+
+.marqueeContainer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    mask-image: linear-gradient(to right,
+            transparent 0%,
+            black 15%,
+            black 85%,
+            transparent 100%);
+}
+
+.marqueeContent {
+    display: flex;
+    flex-shrink: 0;
+    gap: 12px;
+    padding: 10px 0;
+}
+
+.marqueeGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12px;
+    min-width: 100%;
+    animation: marquee 40s linear infinite;
+}
+
+.trustLogo {
+    height: 48px;
+    width: auto;
+    max-width: 100px;
+    object-fit: contain;
+    /* Force transform to black first, then apply #94A3B8 for perfect uniformity */
+    filter: brightness(0) saturate(100%) invert(72%) sepia(12%) saturate(497%) hue-rotate(178deg) brightness(87%) contrast(83%);
+    opacity: 1;
+}
+
+.trustLogoLarge {
+    height: 70px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    /* Force transform to black first, then apply #94A3B8 for perfect uniformity */
+    filter: brightness(0) saturate(100%) invert(72%) sepia(12%) saturate(497%) hue-rotate(178deg) brightness(87%) contrast(83%);
+    opacity: 1;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 12px));
+    }
+}
+
+@media (max-width: 768px) {
+    .trustedBySection {
+        margin: 60px auto 40px;
+    }
+
+    .marqueeContent {
+        gap: 40px;
+    }
+
+    .marqueeGroup {
+        gap: 40px;
+    }
+
+    .trustLogo {
+        height: 20px;
     }
 }

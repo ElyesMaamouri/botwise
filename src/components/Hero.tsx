@@ -1,11 +1,12 @@
 "use client";
 
 import { useTranslations } from 'next-intl';
-import { ArrowRight, ChevronRight, Play, X } from 'lucide-react';
+import { ArrowRight, Play, X } from 'lucide-react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import styles from './Hero.module.css';
+import Button from './ui/Button';
 
 export default function Hero() {
     const t = useTranslations('hero');
@@ -78,19 +79,12 @@ export default function Hero() {
                     </motion.p>
 
                     <motion.div className={styles.ctaGroup} variants={fadeInUp}>
-                        <button className={styles.ctaPrimary}>
+                        <Button variant="primary" href="/start">
                             {t('ctaPrimary')}
-                            <span className={styles.ctaArrows}>
-                                <ChevronRight size={16} />
-                                <ChevronRight size={16} />
-                                <ChevronRight size={16} />
-                            </span>
-                        </button>
-                        <button className={styles.ctaSecondary}>
-                            <span className={styles.starGradientBottom}></span>
-                            <span className={styles.starGradientTop}></span>
-                            <span className={styles.ctaSecondaryText}>{t('ctaSecondary')}</span>
-                        </button>
+                        </Button>
+                        <Button variant="secondary" href="/live">
+                            {t('ctaSecondary')}
+                        </Button>
                     </motion.div>
                 </motion.div>
 
@@ -139,6 +133,29 @@ export default function Hero() {
                             </div>
                             <Play size={28} className={styles.playIcon} />
                         </button>
+                    </div>
+                </motion.div>
+
+                <motion.div
+                    className={styles.trustedBySection}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 2.2 }}
+                >
+                    <p className={styles.trustedByText}>{t('trustedBy')}</p>
+                    <div className={styles.marqueeContainer}>
+                        <div className={styles.marqueeContent}>
+                            {[1, 2].map((i) => (
+                                <div key={i} className={styles.marqueeGroup}>
+                                    <Image src="/stripe.png" alt="Stripe" width={100} height={48} className={styles.trustLogo} />
+                                    <Image src="/Meta logo.png" alt="Meta" width={100} height={48} className={styles.trustLogo} />
+                                    <Image src="/Whop_logo logo.png" alt="Whop" width={100} height={48} className={styles.trustLogo} />
+                                    <Image src="/vercel.png" alt="Vercel" width={100} height={48} className={styles.trustLogo} />
+                                    <Image src="/Logo wolf cars.png" alt="Wolf Cars" width={100} height={48} className={styles.trustLogoLarge} />
+                                    <Image src="/Black rental 2.png" alt="Black Rental" width={100} height={48} className={styles.trustLogoLarge} />
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </motion.div>
 

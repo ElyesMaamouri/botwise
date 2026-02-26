@@ -1,0 +1,156 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- VARIANT PRIMARY --- */
+.primary {
+    padding: 8px 16px 8px 20px;
+    background: linear-gradient(90deg, #0A7DFE 0%, #02D4FE 100%);
+    color: var(--white);
+    box-shadow: 0 0 12px 2px rgba(var(--blue-rgb), 0.5);
+}
+
+.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(var(--blue-rgb), 0.6);
+}
+
+.primary:active {
+    transform: translateY(0) scale(0.98);
+}
+
+/* Arrows animation for primary */
+.ctaArrows {
+    display: flex;
+    margin-left: 5px;
+}
+
+.ctaArrows svg {
+    margin-left: -10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: arrowStagger 1.5s infinite ease-in-out;
+}
+
+.ctaArrows svg:nth-child(1) {
+    animation-delay: 0s;
+    opacity: 0.4;
+}
+
+.ctaArrows svg:nth-child(2) {
+    animation-delay: 0.2s;
+    opacity: 0.7;
+}
+
+.ctaArrows svg:nth-child(3) {
+    animation-delay: 0.4s;
+    opacity: 1;
+}
+
+@keyframes arrowStagger {
+
+    0%,
+    100% {
+        transform: translateX(0);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateX(4px);
+        opacity: 1;
+    }
+}
+
+/* --- VARIANT SECONDARY --- */
+.secondary {
+    padding: 1px 0;
+    background: transparent;
+    color: #19B2CC;
+}
+
+.secondaryText {
+    position: relative;
+    z-index: 1;
+    padding: 8px 28px;
+    border: 1px solid rgba(25, 178, 204, 0.4);
+    border-radius: 11px;
+    background: #040d24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: background 0.2s;
+}
+
+.secondary:hover .secondaryText {
+    background: #071030;
+}
+
+.starGradientBottom,
+.starGradientTop {
+    position: absolute;
+    width: 300%;
+    height: 50%;
+    opacity: 0.7;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.starGradientBottom {
+    bottom: -12px;
+    right: -250%;
+    background: radial-gradient(circle, #19B2CC, transparent 10%);
+    animation: starMovementBottom 6s linear infinite alternate;
+}
+
+.starGradientTop {
+    top: -12px;
+    left: -250%;
+    background: radial-gradient(circle, #fff, transparent 10%);
+    animation: starMovementTop 6s linear infinite alternate;
+}
+
+@keyframes starMovementBottom {
+    0% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-100%, 0%);
+        opacity: 0;
+    }
+}
+
+@keyframes starMovementTop {
+    0% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(100%, 0%);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+    }
+}
