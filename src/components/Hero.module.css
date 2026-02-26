@@ -202,24 +202,94 @@
 
 .ctaSecondary {
     height: 48px;
-    padding: 8px 28px;
-    background: rgba(255, 255, 255, 0.03);
+    padding: 1px 0;
     color: #19B2CC;
     border-radius: 12px;
     font-size: 16px;
     font-weight: 600;
-    line-height: 20px;
-    letter-spacing: 0;
-    border: 1px solid #19B2CC;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
-    transition: background 0.2s, border-color 0.2s;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-.ctaSecondary:hover {
-    background: rgba(255, 255, 255, 0.08);
+.ctaSecondary::before,
+.ctaSecondary::after {
+    content: none;
+}
+
+.starGradientBottom {
+    position: absolute;
+    width: 300%;
+    height: 50%;
+    opacity: 0.7;
+    bottom: -12px;
+    right: -250%;
+    border-radius: 50%;
+    background: radial-gradient(circle, #19B2CC, transparent 10%);
+    animation: starMovementBottom 6s linear infinite alternate;
+    z-index: 0;
+}
+
+.starGradientTop {
+    position: absolute;
+    width: 300%;
+    height: 50%;
+    opacity: 0.7;
+    top: -12px;
+    left: -250%;
+    border-radius: 50%;
+    background: radial-gradient(circle, #fff, transparent 10%);
+    animation: starMovementTop 6s linear infinite alternate;
+    z-index: 0;
+}
+
+@keyframes starMovementBottom {
+    0% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-100%, 0%);
+        opacity: 0;
+    }
+}
+
+@keyframes starMovementTop {
+    0% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(100%, 0%);
+        opacity: 0;
+    }
+}
+
+.ctaSecondaryText {
+    position: relative;
+    z-index: 1;
+    padding: 8px 28px;
+    border: 1px solid rgba(25, 178, 204, 0.4);
+    border-radius: 11px;
+    background: #040d24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: background 0.2s;
+}
+
+.ctaSecondary:hover .ctaSecondaryText {
+    background: #071030;
 }
 
 .carWrapper {

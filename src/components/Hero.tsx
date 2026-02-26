@@ -84,7 +84,9 @@ export default function Hero() {
                         </span>
                     </button>
                     <button className={styles.ctaSecondary}>
-                        {t('ctaSecondary')}
+                        <span className={styles.starGradientBottom}></span>
+                        <span className={styles.starGradientTop}></span>
+                        <span className={styles.ctaSecondaryText}>{t('ctaSecondary')}</span>
                     </button>
                 </motion.div>
             </motion.div>
