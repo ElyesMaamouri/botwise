@@ -141,19 +141,19 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.8, ease: "easeOut", delay: 2.2 }}
+                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                 >
                     <p className={styles.trustedByText}>{t('trustedBy')}</p>
                     <div className={styles.marqueeContainer}>
                         <div className={styles.marqueeContent}>
                             {[1, 2].map((i) => (
                                 <div key={i} className={styles.marqueeGroup}>
-                                    <Image src="/stripe.png" alt="Stripe" width={100} height={48} className={styles.trustLogo} />
-                                    <Image src="/Meta logo.png" alt="Meta" width={100} height={48} className={styles.trustLogo} />
-                                    <Image src="/Whop_logo logo.png" alt="Whop" width={100} height={48} className={styles.trustLogo} />
-                                    <Image src="/vercel.png" alt="Vercel" width={100} height={48} className={styles.trustLogo} />
-                                    <Image src="/Logo wolf cars.png" alt="Wolf Cars" width={100} height={48} className={styles.trustLogoLarge} />
-                                    <Image src="/Black rental 2.png" alt="Black Rental" width={100} height={48} className={styles.trustLogoLarge} />
+                                    <Image src="/stripe.png" alt="Stripe" width={110} height={50} className={styles.trustLogo} />
+                                    <Image src="/Meta logo.png" alt="Meta" width={110} height={50} className={styles.trustLogo} />
+                                    <Image src="/Whop_logo logo.png" alt="Whop" width={110} height={50} className={styles.trustLogo} />
+                                    <Image src="/vercel.png" alt="Vercel" width={110} height={50} className={styles.trustLogo} />
+                                    <Image src="/Logo wolf cars.png" alt="Wolf Cars" width={120} height={50} className={styles.trustLogoLarge} />
+                                    <Image src="/Black rental 2.png" alt="Black Rental" width={150} height={50} className={styles.trustLogoLarge} />
                                 </div>
                             ))}
                         </div>

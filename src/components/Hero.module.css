@@ -49,7 +49,7 @@
 .badge {
     display: inline-flex;
     align-items: center;
-    border: 1px solid #25D1F4;
+    border: 1px solid var(--light-cyan);
     border-radius: 100px;
     padding: 6px 8px;
     margin-bottom: 53px;
@@ -84,7 +84,7 @@
 
 .arrowIcon {
     background: var(--bg-arrow);
-    color: var(--arrow-color);
+    color: var(--deep-blue);
     width: 28px;
     height: 28px;
     border-radius: 50%;
@@ -100,7 +100,7 @@
     font-weight: 600;
     line-height: 1.05;
     letter-spacing: -0.05em;
-    background: linear-gradient(180deg, #DFDFDF 0%, #E9EBED 50%, #9F9F9F 100%);
+    background: linear-gradient(180deg, var(--gray-mid) 0%, var(--gray-light) 50%, var(--gray-dark) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -111,7 +111,7 @@
 
 .description {
     font-size: clamp(1rem, 2.5vw, 20px);
-    color: #94A3B8;
+    color: var(--text-muted);
     font-weight: 400;
     max-width: 650px;
     margin: 0 auto 48px;
@@ -131,7 +131,7 @@
 .ctaPrimary {
     height: 48px;
     padding: 8px 16px 8px 20px;
-    background: linear-gradient(90deg, #0A7DFE 0%, #02D4FE 100%);
+    background: linear-gradient(90deg, var(--grad-start) 0%, var(--grad-end) 100%);
     color: var(--white);
     border-radius: 12px;
     font-size: 16px;
@@ -203,7 +203,7 @@
 .ctaSecondary {
     height: 48px;
     padding: 1px 0;
-    color: #19B2CC;
+    color: var(--cyan);
     border-radius: 12px;
     font-size: 16px;
     font-weight: 600;
@@ -230,7 +230,7 @@
     bottom: -12px;
     right: -250%;
     border-radius: 50%;
-    background: radial-gradient(circle, #19B2CC, transparent 10%);
+    background: radial-gradient(circle, var(--cyan), transparent 10%);
     animation: starMovementBottom 6s linear infinite alternate;
     z-index: 0;
 }
@@ -243,7 +243,7 @@
     top: -12px;
     left: -250%;
     border-radius: 50%;
-    background: radial-gradient(circle, #fff, transparent 10%);
+    background: radial-gradient(circle, var(--white), transparent 10%);
     animation: starMovementTop 6s linear infinite alternate;
     z-index: 0;
 }
@@ -278,7 +278,7 @@
     padding: 8px 28px;
     border: 1px solid rgba(25, 178, 204, 0.4);
     border-radius: 11px;
-    background: #040d24;
+    background: var(--secondary-bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -289,7 +289,7 @@
 }
 
 .ctaSecondary:hover .ctaSecondaryText {
-    background: #071030;
+    background: var(--dark-accent);
 }
 
 .carWrapper {
@@ -447,7 +447,7 @@
 
 .playButton:hover {
     transform: translate(-50%, -50%) scale(1.08);
-    background: #33B5FF;
+    background: var(--bright-blue);
     box-shadow:
         0 4px 80px 0 rgba(var(--blue-rgb), 0.8),
         0 0 50px rgba(var(--blue-rgb), 0.5);
@@ -456,8 +456,8 @@
 .playIcon {
     position: relative;
     z-index: 2;
-    color: #040D24;
-    fill: #040D24;
+    color: var(--secondary-bg);
+    fill: var(--secondary-bg);
     margin-left: 2px;
 }
 
@@ -521,7 +521,7 @@
     position: relative;
     width: 100%;
     max-width: 900px;
-    background: #061020;
+    background: var(--deep-dark);
     border-radius: 20px;
     border: 1px solid rgba(var(--blue-rgb), 0.2);
     box-shadow:
@@ -583,7 +583,8 @@
     width: 100%;
     max-width: 900px;
     /* Matches dashboardWrapper max-width */
-    margin: 20px auto 100px;
+    margin: 20px auto 0;
+    /* Reduced bottom margin to 0 */
     text-align: center;
     overflow: hidden;
 }
@@ -593,7 +594,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    color: #94A3B8;
+    color: var(--text-muted);
     margin-bottom: 24px;
     letter-spacing: 0.02em;
 }
@@ -632,7 +633,7 @@
     width: auto;
     max-width: 100px;
     object-fit: contain;
-    /* Force transform to black first, then apply #94A3B8 for perfect uniformity */
+    /* Force transform to black first, then apply var(--text-muted) for perfect uniformity */
     filter: brightness(0) saturate(100%) invert(72%) sepia(12%) saturate(497%) hue-rotate(178deg) brightness(87%) contrast(83%);
     opacity: 1;
 }
@@ -642,7 +643,7 @@
     width: auto;
     max-width: 160px;
     object-fit: contain;
-    /* Force transform to black first, then apply #94A3B8 for perfect uniformity */
+    /* Force transform to black first, then apply var(--text-muted) for perfect uniformity */
     filter: brightness(0) saturate(100%) invert(72%) sepia(12%) saturate(497%) hue-rotate(178deg) brightness(87%) contrast(83%);
     opacity: 1;
 }

@@ -19,7 +19,7 @@
 /* --- VARIANT PRIMARY --- */
 .primary {
     padding: 8px 16px 8px 20px;
-    background: linear-gradient(90deg, #0A7DFE 0%, #02D4FE 100%);
+    background: linear-gradient(90deg, var(--grad-start) 0%, var(--grad-end) 100%);
     color: var(--white);
     box-shadow: 0 0 12px 2px rgba(var(--blue-rgb), 0.5);
 }
@@ -78,7 +78,7 @@
 .secondary {
     padding: 1px 0;
     background: transparent;
-    color: #19B2CC;
+    color: var(--cyan);
 }
 
 .secondaryText {
@@ -87,7 +87,7 @@
     padding: 8px 28px;
     border: 1px solid rgba(25, 178, 204, 0.4);
     border-radius: 11px;
-    background: #040d24;
+    background: var(--secondary-bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,7 +98,7 @@
 }
 
 .secondary:hover .secondaryText {
-    background: #071030;
+    background: var(--dark-accent);
 }
 
 .starGradientBottom,
@@ -114,14 +114,14 @@
 .starGradientBottom {
     bottom: -12px;
     right: -250%;
-    background: radial-gradient(circle, #19B2CC, transparent 10%);
+    background: radial-gradient(circle, var(--cyan), transparent 10%);
     animation: starMovementBottom 6s linear infinite alternate;
 }
 
 .starGradientTop {
     top: -12px;
     left: -250%;
-    background: radial-gradient(circle, #fff, transparent 10%);
+    background: radial-gradient(circle, var(--white), transparent 10%);
     animation: starMovementTop 6s linear infinite alternate;
 }
 

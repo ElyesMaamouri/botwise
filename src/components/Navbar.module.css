@@ -118,7 +118,7 @@
         left: -110%;
         width: 280px;
         height: 100vh;
-        background: #040822;
+        background: var(--background);
         flex-direction: column;
         justify-content: center;
         padding: 40px;

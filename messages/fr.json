@@ -14,5 +14,23 @@
     "ctaPrimary": "Démarrer et évoluer avec Botwise",
     "ctaSecondary": "Essayer Botwise en direct",
     "trustedBy": "Approuvé par les plus grandes agences de location de voitures"
+  },
+  "solutions": {
+    "introBadge": "Notre solution",
+    "introTitle": "Conçu pour booster vos réservations de location de voitures",
+    "introDescription": "Tout ce dont votre agence a besoin pour répondre plus vite, louer plus et opérer intelligemment.",
+    "badge": "LA SOLUTION",
+    "title": "Découvrez Botwise. Conçu pour booster vos réservations.",
+    "description": "Botwise est un agent IA qui gère l'intégralité de la conversation de réservation automatiquement — du premier message jusqu'à la confirmation finale.",
+    "features": {
+      "instant": "Réponses instantanées sur tous les canaux",
+      "availability": "Calcul des disponibilités et des tarifs",
+      "info": "Collecte des informations de réservation",
+      "payment": "Automatisation des paiements",
+      "followups": "Relances automatiques",
+      "upsells": "Ventes additionnelles et assurances",
+      "crm": "Synchronisation CRM",
+      "multilingual": "Support multilingue"
+    }
   }
 }

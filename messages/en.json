@@ -14,5 +14,23 @@
     "ctaPrimary": "Start & Scale with Botwise",
     "ctaSecondary": "Try botwise live",
     "trustedBy": "Trusted by Leading Car Rental Agencies"
+  },
+  "solutions": {
+    "introBadge": "Our solution",
+    "introTitle": "Built to Increase Your Car Rental Bookings",
+    "introDescription": "Everything your agency needs to respond faster, convert more, and operate smarter.",
+    "badge": "THE SOLUTION",
+    "title": "Meet Botwise. Built to increase your car rental bookings.",
+    "description": "Botwise is an AI agent that handles your entire booking conversation automatically — from first message to confirmed reservation.",
+    "features": {
+      "instant": "Instant replies on all channels",
+      "availability": "Availability & price calculation",
+      "info": "Booking info collection",
+      "payment": "Payment automation",
+      "followups": "Automatic follow-ups",
+      "upsells": "Insurance & upgrade upsells",
+      "crm": "CRM sync",
+      "multilingual": "Multilingual support"
+    }
   }
 }

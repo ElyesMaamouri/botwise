@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import Solution from '@/components/Solution';
 import styles from '../page.module.css';
 
 export default function HomePage() {
@@ -7,7 +8,7 @@ export default function HomePage() {
         <main className={styles.main}>
             <Navbar />
             <Hero />
-            {/* Add more sections here as you code your design */}
+            <Solution />
         </main>
     );
 }

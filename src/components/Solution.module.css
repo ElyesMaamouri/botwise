@@ -1,0 +1,314 @@
+.solution {
+    padding: 120px 20px;
+    background: var(--background);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.introContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.introHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.introBadge {
+    background: var(--white);
+    color: var(--deep-blue);
+    padding: 8px 24px;
+    border-radius: 100px;
+    font-family: var(--font-inter), 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.005em;
+    /* -0.5% */
+    text-transform: capitalize;
+    margin-bottom: 32px;
+    /* Vibrant blue glow aura from the design */
+    box-shadow: 0 0 25px var(--chat-glow-aura);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+}
+
+.introTitle {
+    font-family: var(--font-inter), 'Inter', sans-serif;
+    font-size: clamp(32px, 5vw, 44px);
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 24px;
+    letter-spacing: -0.035em;
+    /* -3.5% */
+}
+
+.introDescription {
+    font-family: var(--font-inter), 'Inter', sans-serif;
+    font-size: 18px;
+    color: var(--text-muted);
+
+    line-height: 1.5;
+    /* 150% */
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* Left Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.badge {
+    color: var(--light-cyan);
+    font-family: 'Plus Jakarta Sans', var(--font-plus-jakarta-sans), sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 19.8px;
+    letter-spacing: 1.44px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: 'Plus Jakarta Sans', var(--font-plus-jakarta-sans), sans-serif;
+    font-size: clamp(32px, 5vw, 51.2px);
+    font-weight: 800;
+    line-height: 56.32px;
+    color: var(--title-white);
+    margin-bottom: 24px;
+    letter-spacing: -1.54px;
+}
+
+.description {
+    font-family: 'Plus Jakarta Sans', var(--font-plus-jakarta-sans), sans-serif;
+    font-size: 16.8px;
+    color: var(--text-muted);
+    line-height: 28.56px;
+    margin-bottom: 48px;
+    max-width: 550px;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+/* Features Grid */
+.featuresGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+}
+
+.featureCard {
+    background: var(--card-bg);
+    border: 1px solid var(--border-subtle);
+    /* #FFFFFF12 roughly */
+    padding: 14px 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.featureCard:hover {
+    background: rgba(5, 26, 58, 0.8);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background: var(--blue);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.featureLabel {
+    font-family: 'Plus Jakarta Sans', var(--font-plus-jakarta-sans), sans-serif;
+    font-size: 14.1px;
+    color: var(--text-muted);
+    font-weight: 300;
+    line-height: 23.23px;
+    letter-spacing: 0;
+}
+
+/* Chat Mockup Styling */
+.chatWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.chatGlow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background: var(--blue);
+    opacity: 0.1;
+    /* 10% opacity as per Figma */
+    filter: blur(120px);
+    /* 120 blur as per Figma */
+    pointer-events: none;
+    z-index: 0;
+}
+
+.chatMockup {
+    background: var(--chat-bg);
+    /* Very dark deep blue/black */
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+    /* Above the glow */
+    box-shadow:
+        0 40px 100px rgba(0, 0, 0, 0.7),
+        inset 0 0 60px rgba(var(--blue-rgb), 0.1);
+}
+
+.chatHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.onlineDot {
+    width: 10px;
+    height: 10px;
+    background: var(--online-green);
+    border-radius: 50%;
+    box-shadow: 0 0 12px var(--online-glow);
+}
+
+.headerText {
+    font-family: 'Plus Jakarta Sans', var(--font-plus-jakarta-sans), sans-serif;
+    font-size: 11.5px;
+    font-weight: 500;
+    line-height: 19px;
+    color: var(--online-green);
+    letter-spacing: 0;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.message {
+    max-width: 82%;
+    padding: 11px 16px 11.9px;
+    /* Exact Figma padding */
+    font-family: 'Plus Jakarta Sans', var(--font-plus-jakarta-sans), sans-serif;
+    font-size: 13.6px;
+    line-height: 20.4px;
+    font-weight: 300;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 3.48px;
+    /* Exact Figma gap */
+}
+
+.userMessage {
+    align-self: flex-end;
+    background: rgba(var(--blue-rgb), 0.1);
+    /* Exact 10% from image */
+    color: var(--chat-user-text);
+    border-color: rgba(var(--blue-rgb), 0.2);
+    border-radius: 12px 12px 2px 12px;
+    /* Exact Figma radius */
+}
+
+.botMessage {
+    align-self: flex-start;
+    background: rgba(0, 0, 0, 0.05);
+    /* #000000 5% as per image */
+    color: var(--title-white);
+    border: 1px solid var(--chat-bot-gold);
+    border-radius: 12px 12px 12px 2px;
+    padding: 11.19px 20.03px 11.9px 16px;
+    /* Exact Figma padding */
+    gap: 3.67px;
+    /* Exact Figma gap */
+}
+
+.time {
+    display: block;
+    font-family: 'Plus Jakarta Sans', var(--font-plus-jakarta-sans), sans-serif;
+    font-size: 11.2px;
+    line-height: 16.8px;
+    margin-top: 10px;
+    color: var(--chat-meta);
+    /* Exact Figma metadata color */
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+.botName {
+    font-weight: 300;
+    color: var(--chat-meta);
+}
+
+@media (max-width: 1024px) {
+    .solution {
+        padding: 80px 20px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 640px) {
+    .featuresGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .chatMockup {
+        padding: 25px;
+    }
+}
