@@ -1,17 +1,17 @@
 .hero {
-    padding: 180px 20px 100px;
+    padding: 180px 20px 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
-    overflow: hidden;
     background: var(--background);
 }
 
 .glowWrapper {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -21,6 +21,7 @@
     align-items: center;
     pointer-events: none;
     z-index: 0;
+    overflow: hidden;
 }
 
 .glowContainer {
@@ -41,19 +42,17 @@
 
 .container {
     max-width: 900px;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Badge Styling */
 .badge {
     display: inline-flex;
     align-items: center;
-    /* background: rgba(255, 255, 255, 0.03); */
     border: 1px solid #25D1F4;
     border-radius: 100px;
     padding: 6px 8px;
     margin-bottom: 53px;
-    backdrop-filter: blur(10px);
 }
 
 .badgeLabel {
@@ -126,6 +125,7 @@
     justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
+    margin-bottom: 60px;
 }
 
 .ctaPrimary {
@@ -151,10 +151,59 @@
     box-shadow: 0 0 30px rgba(0, 162, 251, 0.6);
 }
 
+.ctaArrows {
+    display: flex;
+    margin-left: 5px;
+}
+
+.ctaArrows svg {
+    margin-left: -10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: arrowStagger 1.5s infinite ease-in-out;
+}
+
+.ctaArrows svg:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.ctaArrows svg:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.ctaArrows svg:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes arrowStagger {
+
+    0%,
+    100% {
+        transform: translateX(0);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateX(4px);
+        opacity: 1;
+    }
+}
+
+.ctaArrows svg:first-child {
+    opacity: 0.4;
+}
+
+.ctaArrows svg:nth-child(2) {
+    opacity: 0.7;
+}
+
+.ctaArrows svg:last-child {
+    opacity: 1;
+}
+
 .ctaSecondary {
     height: 48px;
     padding: 8px 28px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.03);
     color: #19B2CC;
     border-radius: 12px;
     font-size: 16px;
@@ -170,51 +219,92 @@
 }
 
 .ctaSecondary:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
 }
 
-/* Car Section Styles */
 .carWrapper {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
     position: relative;
-    z-index: 2;
 }
 
 .carContainer {
-    width: 100%;
-    max-width: 1200px;
     position: relative;
+    width: 100%;
+    height: auto;
+    visibility: hidden;
+    animation: carSlideIn 0.8s ease-out 1.2s forwards;
+}
+
+@keyframes carSlideIn {
+    0% {
+        visibility: visible;
+        margin-top: 30px;
+    }
+
+    100% {
+        visibility: visible;
+        margin-top: 0;
+    }
 }
 
 .carImage {
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    height: 218px;
     display: block;
     mix-blend-mode: screen;
-    mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%);
+    /* filter: brightness(1.4) contrast(3.5); */
+    opacity: 1;
+    mask-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 10%,
+            rgba(0, 0, 0, 1) 90%,
+            rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 10%,
+            rgba(0, 0, 0, 1) 90%,
+            rgba(0, 0, 0, 0) 100%);
 }
+
+/* .carOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, var(--background) 0%, transparent 100%);
+    pointer-events: none;
+} */
 
 @media (max-width: 768px) {
     .hero {
-        padding-top: 140px;
+        padding: 156px 20px 0;
     }
 
     .badge {
-        padding: 3px 4px;
+        padding: 4px 6px;
+        /* max-width: calc(100% - 40px); */
     }
 
     .badgeLabel {
-        padding: 3px 8px;
+        flex-shrink: 0;
         margin-right: 8px;
+    }
+
+    .badgeText {
+        font-size: 11px;
+        line-height: 16px;
+        white-space: normal;
+        text-align: left;
     }
 
     .ctaGroup {
         flex-direction: column;
         padding: 0 20px;
+        margin-bottom: 0;
     }
 
     .ctaPrimary,

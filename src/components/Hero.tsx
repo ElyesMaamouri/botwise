@@ -88,6 +88,20 @@ export default function Hero() {
                     </button>
                 </motion.div>
             </motion.div>
+
+
+            <div className={styles.carContainer}>
+                <Image
+                    src="/car.webp"
+                    alt="Hero Car"
+                    width={1440}
+                    height={600}
+                    className={styles.carImage}
+                    priority
+                />
+                <div className={styles.carOverlay}></div>
+            </div>
+
         </section>
     );
 }
