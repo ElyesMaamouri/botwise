@@ -138,9 +138,10 @@ export default function Hero() {
 
                 <motion.div
                     className={styles.trustedBySection}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.8, delay: 2.2 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, ease: "easeOut", delay: 2.2 }}
                 >
                     <p className={styles.trustedByText}>{t('trustedBy')}</p>
                     <div className={styles.marqueeContainer}>

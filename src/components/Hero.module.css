@@ -11,14 +11,14 @@
 
 .glowWrapper {
     position: absolute;
-    top: 35%;
+    top: 50px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: 100%;
-    height: 100%;
+    height: 1000px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     pointer-events: none;
     z-index: 0;
     overflow: hidden;
@@ -659,18 +659,33 @@
 
 @media (max-width: 768px) {
     .trustedBySection {
-        margin: 60px auto 40px;
+        margin: 20px auto 40px;
     }
 
     .marqueeContent {
-        gap: 40px;
+        gap: 12px;
     }
 
     .marqueeGroup {
-        gap: 40px;
+        gap: 12px;
+        animation: marqueeMobile 40s linear infinite;
     }
 
     .trustLogo {
-        height: 20px;
+        height: 24px;
+    }
+
+    .trustLogoLarge {
+        height: 35px;
+    }
+}
+
+@keyframes marqueeMobile {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-100% - 12px));
     }
 }
