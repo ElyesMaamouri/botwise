@@ -11,7 +11,7 @@
 
 .glowWrapper {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -56,7 +56,7 @@
 }
 
 .badgeLabel {
-    background: #00A2FB;
+    background: var(--blue);
     color: var(--black);
     width: 42px;
     height: 24px;
@@ -141,14 +141,14 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    box-shadow: 0 0 12px 2px rgba(0, 162, 251, 0.5);
+    box-shadow: 0 0 12px 2px rgba(var(--blue-rgb), 0.5);
     transition: transform 0.2s, box-shadow 0.2s;
     border: none;
 }
 
 .ctaPrimary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 30px rgba(0, 162, 251, 0.6);
+    box-shadow: 0 0 30px rgba(var(--blue-rgb), 0.6);
 }
 
 .ctaArrows {
@@ -339,7 +339,7 @@
             rgba(0, 0, 0, 0) 100%);
 }
 
-/* .carOverlay {
+.carOverlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -347,7 +347,7 @@
     height: 40%;
     background: linear-gradient(to top, var(--background) 0%, transparent 100%);
     pointer-events: none;
-} */
+}
 
 @media (max-width: 768px) {
     .hero {
@@ -381,5 +381,198 @@
     .ctaSecondary {
         width: 100%;
         justify-content: center;
+    }
+}
+
+/* ========== Dashboard Section ========== */
+.dashboardWrapper {
+    width: 100%;
+    max-width: 1041px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    position: relative;
+    z-index: 2;
+}
+
+.dashboardFrame {
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    /* border: 1px solid rgba(var(--blue-rgb), 0.25); */
+    /* box-shadow:
+        0 0 0 1px rgba(var(--blue-rgb), 0.1),
+        0 4px 63px 0 rgba(var(--blue-rgb), 0.61),
+        0 0 80px -20px rgba(var(--blue-rgb), 0.4); */
+}
+
+.dashboardImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+.dashboardOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(4, 13, 36, 0.25);
+    border-radius: 16px;
+    pointer-events: none;
+}
+
+/* ========== Play Button ========== */
+.playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 88px;
+    height: 62px;
+    border-radius: 14px;
+    background: var(--blue);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        0 4px 63px 0 rgba(var(--blue-rgb), 0.61),
+        0 0 40px rgba(var(--blue-rgb), 0.4);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s ease, background 0.25s ease;
+    z-index: 3;
+    overflow: visible;
+}
+
+.playButton:hover {
+    transform: translate(-50%, -50%) scale(1.08);
+    background: #33B5FF;
+    box-shadow:
+        0 4px 80px 0 rgba(var(--blue-rgb), 0.8),
+        0 0 50px rgba(var(--blue-rgb), 0.5);
+}
+
+.playIcon {
+    position: relative;
+    z-index: 2;
+    color: #040D24;
+    fill: #040D24;
+    margin-left: 2px;
+}
+
+.rippleContainer {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.ripple {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--blue);
+    border-radius: 14px;
+    opacity: 0;
+    animation: rippleEffect 3s linear infinite;
+}
+
+.ripple:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.ripple:nth-child(3) {
+    animation-delay: 2s;
+}
+
+@keyframes rippleEffect {
+    0% {
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+    }
+
+    100% {
+        width: 250%;
+        height: 350%;
+        opacity: 0;
+    }
+}
+
+/* ========== Video Modal ========== */
+.modalBackdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modalContent {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    background: #061020;
+    border-radius: 20px;
+    border: 1px solid rgba(var(--blue-rgb), 0.2);
+    box-shadow:
+        0 4px 63px 0 rgba(var(--blue-rgb), 0.3),
+        0 0 120px -20px rgba(var(--blue-rgb), 0.2);
+    overflow: hidden;
+}
+
+.modalClose {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 10;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.modalClose:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.videoWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.videoIframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .dashboardWrapper {
+        padding: 0 12px 60px;
+    }
+
+    .playButton {
+        width: 56px;
+        height: 56px;
     }
 }
