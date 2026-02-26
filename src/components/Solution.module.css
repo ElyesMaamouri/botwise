@@ -1,17 +1,17 @@
 .solution {
-    padding: 120px 20px;
+    padding: 100px 20px;
     background: var(--background);
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 60px;
 }
 
+
 .introContainer {
-    max-width: 1200px;
-    margin: 0 auto;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .introHeader {
@@ -64,11 +64,9 @@
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 120px;
     align-items: center;
 }
 
@@ -161,34 +159,31 @@
     width: 100%;
 }
 
-.chatGlow {
+.chatGlowContainer {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: -50%;
+    left: -20%;
     transform: translate(-50%, -50%);
-    width: 70%;
-    height: 70%;
-    background: var(--blue);
-    opacity: 0.1;
-    /* 10% opacity as per Figma */
-    filter: blur(120px);
-    /* 120 blur as per Figma */
+    width: 140%;
+    height: 140%;
     pointer-events: none;
     z-index: 0;
 }
 
+.glowImage {
+    object-fit: contain;
+    transform: scale(1.4);
+    opacity: 0.5;
+}
+
 .chatMockup {
     background: var(--chat-bg);
-    /* Very dark deep blue/black */
     border: 1px solid var(--border-light);
     border-radius: 16px;
     padding: 40px;
     position: relative;
     z-index: 1;
-    /* Above the glow */
-    box-shadow:
-        0 40px 100px rgba(0, 0, 0, 0.7),
-        inset 0 0 60px rgba(var(--blue-rgb), 0.1);
+
 }
 
 .chatHeader {

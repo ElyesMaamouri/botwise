@@ -13,7 +13,7 @@ export default function Navbar() {
 
     return (
         <nav className={styles.navbar}>
-            <div className={styles.container}>
+            <div className={`${styles.container} container`}>
                 <Link href="/" className={styles.logo}>
                     <Image
                         src="/bootwise-logo.webp"

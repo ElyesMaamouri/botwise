@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import styles from './Solution.module.css';
 
 export default function Solution() {
@@ -34,7 +35,8 @@ export default function Solution() {
 
     return (
         <section className={styles.solution} id="solution">
-            <div className={styles.introContainer}>
+
+            <div className={`${styles.introContainer} container-wide`}>
                 <motion.div
                     className={styles.introHeader}
                     initial={{ opacity: 0, y: 20 }}
@@ -54,7 +56,7 @@ export default function Solution() {
                 </motion.div>
             </div>
 
-            <div className={styles.container}>
+            <div className={`${styles.container} container-wide`}>
                 {/* Left side: Text and Features */}
                 <motion.div
                     className={styles.content}
@@ -100,8 +102,27 @@ export default function Solution() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    {/* Ambient Glow from Figma */}
-                    <div className={styles.chatGlow} />
+                    {/* Ambient Glow from SVG directly behind the chat */}
+                    <motion.div
+                        className={styles.chatGlowContainer}
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{
+                            opacity: [0.4, 0.7, 0.4],
+                            scale: [1.2, 1.3, 1.2],
+                        }}
+                        transition={{
+                            opacity: { duration: 8, repeat: Infinity, ease: "easeInOut" },
+                            scale: { duration: 12, repeat: Infinity, ease: "easeInOut" },
+                        }}
+                    >
+                        <Image
+                            src="/Ambient Glows.svg"
+                            alt=""
+                            fill
+                            className={styles.glowImage}
+                            priority
+                        />
+                    </motion.div>
 
                     <div className={styles.chatMockup}>
                         <div className={styles.chatHeader}>

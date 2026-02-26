@@ -60,7 +60,7 @@ export default function Hero() {
                 </div>
 
                 <motion.div
-                    className={styles.container}
+                    className={`${styles.container} container`}
                     variants={staggerContainer}
                     initial="initial"
                     animate="animate"

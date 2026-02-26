@@ -52,6 +52,24 @@
   --section-padding: 100px 5%;
 }
 
+.container {
+  width: 100%;
+  max-width: 1216px;
+  /* 1168 + 48 for padding */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+}
+
+.container-wide {
+  width: 100%;
+  max-width: 1448px;
+  /* 1400 + 48 for padding */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
