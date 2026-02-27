@@ -181,5 +181,46 @@
         "answer": "En répondant instantanément, en qualifiant les locataires automatiquement et en guidant les clients étape par étape vers la confirmation. Un temps de réponse plus rapide = un taux de conversion plus élevé."
       }
     ]
+  },
+  "cta_section": {
+    "badge": "COMMENCER",
+    "title": "Votre agence, transformée.",
+    "description": "Les agences qui gagnent dans la location de voitures ne sont pas plus grandes. Elles sont plus rapides.",
+    "before": {
+      "title": "AVANT",
+      "items": [
+        "Réponses lentes",
+        "Prospects manqués",
+        "Travail manuel",
+        "Équipe débordée",
+        "Réservations perdues"
+      ]
+    },
+    "after": {
+      "title": "APRÈS BOTWISE",
+      "items": [
+        "Réponses instantanées",
+        "Chaque prospect capturé",
+        "Entièrement automatisé",
+        "Équipe libre de se concentrer",
+        "Revenus en hausse"
+      ]
+    },
+    "button": "Réserver votre démo gratuite",
+    "footer": "Aucun engagement. Aucune pression. Voyez exactement comment Botwise fonctionne pour votre flotte."
+  },
+  "footer": {
+    "info": {
+      "title": "Info",
+      "solution": "Notre solution",
+      "pricing": "Pricing",
+      "reviews": "Avis Clients"
+    },
+    "legal": {
+      "title": "Legal",
+      "mentions": "Mentions légales",
+      "privacy": "Politique de confidentialité",
+      "tos": "CGU/CGV"
+    }
   }
 }

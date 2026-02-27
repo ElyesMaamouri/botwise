@@ -1,0 +1,258 @@
+.ctaSection {
+    padding: 100px 0;
+    background-color: var(--background);
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1440px;
+    height: 810px;
+    background: radial-gradient(circle, rgba(0, 162, 251, 0.1) 0%, rgba(0, 162, 251, 0) 70%);
+    filter: blur(120px);
+    pointer-events: none;
+    z-index: 0;
+    border-radius: 9999px;
+    opacity: 0.6;
+}
+
+.localContainer {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Overrides for SectionHeader in CTA section */
+.ctaHeader [class*="introBadge"] {
+    background: transparent !important;
+    border: none !important;
+    color: var(--light-cyan) !important;
+    font-family: var(--font-plus-jakarta), sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 19.8px !important;
+    letter-spacing: 1.44px !important;
+    text-transform: uppercase !important;
+    padding: 0 !important;
+    margin-bottom: 24px !important;
+    box-shadow: none !important;
+}
+
+.ctaHeader [class*="introTitle"] {
+    font-family: var(--font-plus-jakarta), sans-serif !important;
+    font-size: clamp(32px, 5vw, 51.2px) !important;
+    font-weight: 800 !important;
+    line-height: 56.32px !important;
+    letter-spacing: -1.54px !important;
+    color: var(--white) !important;
+}
+
+.ctaHeader [class*="introDescription"] {
+    font-family: var(--font-plus-jakarta), sans-serif !important;
+    font-size: 16.8px !important;
+    font-weight: 300 !important;
+    line-height: 28.56px !important;
+    letter-spacing: 0 !important;
+    color: var(--text-muted) !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+}
+
+.comparison {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.box {
+    flex: 1;
+    max-width: 320px;
+    padding: 31px 40px 32px 40px;
+    border-radius: 14px;
+    background: #070A22;
+    /* Specific dark blue from Figma */
+    border: 1px solid var(--border-subtle);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Internal gap from Figma */
+    transition: all 0.3s ease;
+}
+
+.boxAfter {
+    border-color: var(--light-cyan);
+    box-shadow: 0 0 30px rgba(var(--blue-rgb), 0.1);
+}
+
+.boxTitleBefore {
+    color: #EF4444;
+    font-family: var(--font-plus-jakarta), sans-serif;
+    font-size: 12.8px;
+    font-weight: 700;
+    line-height: 21.12px;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+}
+
+.boxTitleAfter {
+    color: var(--blue);
+    font-family: var(--font-plus-jakarta), sans-serif;
+    font-size: 12.8px;
+    font-weight: 700;
+    line-height: 21.12px;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+}
+
+.itemList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.item {
+    color: #7E92AD;
+    font-family: var(--font-plus-jakarta), sans-serif;
+    font-size: 14.4px;
+    font-weight: 300;
+    line-height: 23.76px;
+    letter-spacing: 0;
+}
+
+.arrow {
+    color: var(--text-muted);
+    opacity: 0.5;
+    animation: arrowBounce 2s infinite ease-in-out;
+}
+
+@keyframes arrowBounce {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.ctaButton {
+    height: 48px;
+    padding: 8px 16px 8px 20px;
+    background: linear-gradient(90deg, var(--grad-start) 0%, var(--grad-end) 100%);
+    color: var(--white);
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 0 12px 2px rgba(var(--blue-rgb), 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.ctaButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(var(--blue-rgb), 0.6);
+}
+
+.ctaArrows {
+    display: flex;
+    margin-left: 5px;
+}
+
+.ctaArrows svg {
+    margin-left: -10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: arrowStagger 1.5s infinite ease-in-out;
+}
+
+.ctaArrows svg:nth-child(1) {
+    animation-delay: 0s;
+    opacity: 0.4;
+}
+
+.ctaArrows svg:nth-child(2) {
+    animation-delay: 0.2s;
+    opacity: 0.7;
+}
+
+.ctaArrows svg:nth-child(3) {
+    animation-delay: 0.4s;
+    opacity: 1;
+}
+
+.ctaFooter {
+    color: var(--text-muted);
+    font-family: var(--font-plus-jakarta), sans-serif;
+    font-size: 14.4px;
+    font-weight: 300;
+    line-height: 23.76px;
+    letter-spacing: 0;
+}
+
+@media (max-width: 768px) {
+    .comparison {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+        animation: arrowBounceMobile 2s infinite ease-in-out;
+    }
+
+    .box {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@keyframes arrowBounceMobile {
+
+    0%,
+    100% {
+        transform: rotate(90deg) translateX(0);
+    }
+
+    50% {
+        transform: rotate(90deg) translateX(10px);
+    }
+}
+
+@keyframes arrowStagger {
+
+    0%,
+    100% {
+        transform: translateX(0);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateX(4px);
+        opacity: 1;
+    }
+}

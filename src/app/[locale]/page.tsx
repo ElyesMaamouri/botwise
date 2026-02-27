@@ -6,6 +6,8 @@ import Analytics from '@/components/Analytics';
 import Pricing from '@/components/Pricing';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
+import CtaSection from '@/components/CtaSection';
+import Footer from '@/components/Footer';
 import styles from '../page.module.css';
 
 export default function HomePage() {
@@ -19,6 +21,8 @@ export default function HomePage() {
             <Pricing />
             <Testimonials />
             <FAQ />
+            <CtaSection />
+            <Footer />
         </main>
     );
 }

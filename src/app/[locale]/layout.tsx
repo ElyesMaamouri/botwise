@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Space_Grotesk, Plus_Jakarta_Sans, DM_Sans } from "next/font/google";
 import "../globals.css";
 
 const inter = Inter({
@@ -14,6 +14,18 @@ const spaceGrotesk = Space_Grotesk({
     variable: "--font-space-grotesk",
     subsets: ["latin"],
     weight: ["400", "500", "600", "700"],
+});
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+    variable: "--font-plus-jakarta",
+    subsets: ["latin"],
+    weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const dmSans = DM_Sans({
+    variable: "--font-dm-sans",
+    subsets: ["latin"],
+    weight: ["500"],
 });
 
 export default async function LocaleLayout({
@@ -36,7 +48,7 @@ export default async function LocaleLayout({
 
     return (
         <html lang={locale}>
-            <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
+            <body className={`${inter.variable} ${spaceGrotesk.variable} ${plusJakartaSans.variable} ${dmSans.variable}`}>
                 <NextIntlClientProvider messages={messages}>
                     {children}
                 </NextIntlClientProvider>

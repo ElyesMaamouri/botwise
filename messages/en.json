@@ -181,5 +181,46 @@
         "answer": "By responding instantly, qualifying renters automatically, and guiding customers step-by-step toward confirmation. Faster response time = higher conversion rate."
       }
     ]
+  },
+  "cta_section": {
+    "badge": "GET STARTED",
+    "title": "Your agency, transformed.",
+    "description": "The agencies winning in car rental aren't bigger. They're faster.",
+    "before": {
+      "title": "BEFORE",
+      "items": [
+        "Slow replies",
+        "Missed leads",
+        "Manual work",
+        "Staff overwhelmed",
+        "Bookings lost"
+      ]
+    },
+    "after": {
+      "title": "AFTER BOTWISE",
+      "items": [
+        "Instant responses",
+        "Every lead captured",
+        "Fully automated",
+        "Team free to focus",
+        "Revenue growing"
+      ]
+    },
+    "button": "Book Your Free Demo",
+    "footer": "No commitment. No pressure. See exactly how Botwise works for your fleet."
+  },
+  "footer": {
+    "info": {
+      "title": "Info",
+      "solution": "Our solution",
+      "pricing": "Pricing",
+      "reviews": "Customer reviews"
+    },
+    "legal": {
+      "title": "Legal",
+      "mentions": "Legal notice",
+      "privacy": "Privacy policy",
+      "tos": "Terms & Conditions"
+    }
   }
 }

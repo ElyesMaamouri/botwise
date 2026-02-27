@@ -1,0 +1,124 @@
+.footer {
+    padding: 80px 0 40px;
+    background-color: var(--background);
+    border-top: 1px solid var(--border-subtle);
+    position: relative;
+    z-index: 10;
+}
+
+.localContainer {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logoImage {
+    width: 135px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.logoText {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.02em;
+}
+
+.socials {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.socialIconImg {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+    filter: brightness(0) invert(1) opacity(0.6);
+}
+
+.socialIconImg:hover {
+    opacity: 1;
+    filter: brightness(0) invert(1) opacity(1);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.columnTitle {
+    color: var(--white);
+    font-family: var(--font-dm-sans), sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.link {
+    color: #6B7280;
+    font-family: var(--font-inter), sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+}
+
+.linkIcon {
+    opacity: 0;
+    transform: translate(-5px, 5px);
+    transition: all 0.3s ease;
+    color: var(--white);
+}
+
+.link:hover {
+    color: var(--white);
+}
+
+.link:hover .linkIcon {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
