@@ -1,0 +1,52 @@
+.pricing {
+    padding: 100px 20px;
+    background: var(--background);
+    position: relative;
+    overflow: hidden;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 440px);
+    gap: 32px;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.starterBtn {
+    background: transparent !important;
+    border: 1px solid var(--blue) !important;
+    color: var(--blue) !important;
+    font-weight: 500 !important;
+    box-shadow: none !important;
+    width: 100% !important;
+}
+
+.starterBtn span[class*="ctaArrows"] svg {
+    color: inherit !important;
+}
+
+.starterBtn:hover {
+    background: rgba(var(--blue-rgb), 0.1) !important;
+}
+
+.proBtn {
+    background: var(--blue) !important;
+    color: var(--black) !important;
+    font-weight: 600 !important;
+    box-shadow: 0 0 20px rgba(var(--blue-rgb), 0.4) !important;
+    width: 100% !important;
+}
+
+.proBtn:hover {
+    box-shadow: 0 0 30px rgba(var(--blue-rgb), 0.6) !important;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+        max-width: 440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

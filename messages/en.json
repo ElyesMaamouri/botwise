@@ -73,5 +73,49 @@
         "description": "Financial transparency with detailed impact reports."
       }
     }
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Choose Your Growth Plan",
+    "description": "Designed exclusively for car rental agencies ready to automate and increase bookings.",
+    "starter": {
+      "badge": "Starter",
+      "name": "STARTER",
+      "subtitle": "For growing agencies",
+      "price": "490",
+      "setupFee": "+ one-time setup fee",
+      "cta": "Get started",
+      "features": [
+        "3 channels (WhatsApp, Instagram, Messenger)",
+        "Up to 10 vehicles",
+        "Live conversation control",
+        "Google Sheets or Pipedrive integration",
+        "Payment automation",
+        "Automatic follow-ups",
+        "Multilingual responses",
+        "Standard dashboard",
+        "Standard support"
+      ]
+    },
+    "pro": {
+      "badge": "Most popular",
+      "name": "PRO",
+      "subtitle": "For high-volume agencies",
+      "price": "990",
+      "setupFee": "+ one-time setup fee",
+      "cta": "Get started with Pro",
+      "features": [
+        "Unlimited channels",
+        "Up to 50 vehicles",
+        "Full API integrations",
+        "HubSpot, Zoho, Notion CRM",
+        "Payment automation",
+        "Automatic follow-ups",
+        "Multilingual responses",
+        "Advanced analytics dashboard",
+        "Automated upsells (insurance, upgrades)",
+        "Priority support + monthly optimization"
+      ]
+    }
   }
 }

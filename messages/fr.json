@@ -73,5 +73,49 @@
         "description": "Transparence financière avec des rapports d'impact détaillés."
       }
     }
+  },
+  "pricing": {
+    "badge": "Tarifs",
+    "title": "Choisissez votre plan de croissance",
+    "description": "Conçu exclusivement pour les agences de location de voitures prêtes à automatiser et à augmenter leurs réservations.",
+    "starter": {
+      "badge": "Starter",
+      "name": "STARTER",
+      "subtitle": "Pour les agences en croissance",
+      "price": "490",
+      "setupFee": "+ frais d'installation uniques",
+      "cta": "Commencer",
+      "features": [
+        "3 canaux (WhatsApp, Instagram, Messenger)",
+        "Jusqu'à 10 véhicules",
+        "Contrôle des conversations en direct",
+        "Intégration Google Sheets ou Pipedrive",
+        "Automatisation des paiements",
+        "Suivis automatiques",
+        "Réponses multilingues",
+        "Tableau de bord standard",
+        "Support standard"
+      ]
+    },
+    "pro": {
+      "badge": "Le plus populaire",
+      "name": "PRO",
+      "subtitle": "Pour les agences à fort volume",
+      "price": "990",
+      "setupFee": "+ frais d'installation uniques",
+      "cta": "Commencer avec Pro",
+      "features": [
+        "Canaux illimités",
+        "Jusqu'à 50 véhicules",
+        "Intégrations API complètes",
+        "CRM HubSpot, Zoho, Notion",
+        "Automatisation des paiements",
+        "Suivis automatiques",
+        "Réponses multilingues",
+        "Tableau de bord analytique avancé",
+        "Upsells automatisés (assurance, surclassements)",
+        "Support prioritaire + optimisation mensuelle"
+      ]
+    }
   }
 }
