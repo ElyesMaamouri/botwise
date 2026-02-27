@@ -7,7 +7,7 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
-    gap: 8px;
+    gap: 6px;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
@@ -41,6 +41,7 @@
 
 .ctaArrows svg {
     margin-left: -10px;
+    color: #ffffff;
     transition: transform 0.3s ease, opacity 0.3s ease;
     animation: arrowStagger 1.5s infinite ease-in-out;
 }

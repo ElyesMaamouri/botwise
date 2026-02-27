@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Solution from '@/components/Solution';
+import HowItWorks from '@/components/HowItWorks';
 import styles from '../page.module.css';
 
 export default function HomePage() {
@@ -9,6 +10,7 @@ export default function HomePage() {
             <Navbar />
             <Hero />
             <Solution />
+            <HowItWorks />
         </main>
     );
 }

@@ -2,12 +2,18 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "../globals.css";
 
 const inter = Inter({
     variable: "--font-inter",
     subsets: ["latin"],
+});
+
+const spaceGrotesk = Space_Grotesk({
+    variable: "--font-space-grotesk",
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
 });
 
 export default async function LocaleLayout({
@@ -30,7 +36,7 @@ export default async function LocaleLayout({
 
     return (
         <html lang={locale}>
-            <body className={inter.variable}>
+            <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
                 <NextIntlClientProvider messages={messages}>
                     {children}
                 </NextIntlClientProvider>

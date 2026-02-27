@@ -1,0 +1,48 @@
+.howItWorks {
+    background: var(--background);
+    position: relative;
+    overflow: hidden;
+
+}
+
+.localContainer {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+
+
+
+.ctaWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.specialBtn {
+    background: #00A2FB !important;
+    color: #000000 !important;
+    box-shadow: 0 0 15px 6px rgba(0, 162, 251, 0.7) !important;
+}
+
+/* Ensure arrows stay white */
+.specialBtn span[class*="ctaArrows"] svg {
+    color: #ffffff !important;
+}
+
+.stepsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .stepsGrid {
+        grid-template-columns: 1fr;
+
+        margin: 0 auto;
+    }
+
+}

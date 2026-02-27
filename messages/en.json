@@ -32,5 +32,23 @@
       "crm": "CRM sync",
       "multilingual": "Multilingual support"
     }
+  },
+  "howItWorks": {
+    "badge": "How it works",
+    "title": "In 3 Simple Steps",
+    "description": "Deploy your AI booking agent in days — not months.",
+    "cta": "Install my AI agent",
+    "step1": {
+      "title": "Connect Your Agency",
+      "description": "We integrate Botwise with your website, WhatsApp, and booking workflow. No technical complexity."
+    },
+    "step2": {
+      "title": "Train Your AI Agent",
+      "description": "We configure your vehicles, pricing rules, availability logic, and qualification criteria. Your AI learns how your agency operates."
+    },
+    "step3": {
+      "title": "Start Capturing Bookings 24/7",
+      "description": "Your AI responds instantly, qualifies renters, checks availability, and sends confirmed booking requests directly to your team."
+    }
   }
 }

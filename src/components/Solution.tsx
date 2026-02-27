@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import SectionHeader from './ui/SectionHeader';
 import styles from './Solution.module.css';
 
 export default function Solution() {
@@ -36,25 +37,12 @@ export default function Solution() {
     return (
         <section className={styles.solution} id="solution">
 
-            <div className={`${styles.introContainer} container-wide`}>
-                <motion.div
-                    className={styles.introHeader}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                >
-                    <span className={styles.introBadge}>
-                        {t('introBadge')}
-                    </span>
-                    <h2 className={styles.introTitle}>
-                        {t('introTitle')}
-                    </h2>
-                    <p className={styles.introDescription}>
-                        {t('introDescription')}
-                    </p>
-                </motion.div>
-            </div>
+            <SectionHeader
+                badge={t('introBadge')}
+                title={t('introTitle')}
+                description={t('introDescription')}
+                className="container-wide"
+            />
 
             <div className={`${styles.container} container-wide`}>
                 {/* Left side: Text and Features */}

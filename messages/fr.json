@@ -32,5 +32,23 @@
       "crm": "Synchronisation CRM",
       "multilingual": "Support multilingue"
     }
+  },
+  "howItWorks": {
+    "badge": "Comment ça marche",
+    "title": "En 3 étapes simples",
+    "description": "Déployez votre agent de réservation IA en quelques jours — pas des mois.",
+    "cta": "Installer mon agent IA",
+    "step1": {
+      "title": "Connectez votre agence",
+      "description": "Nous intégrons Botwise à votre site web, WhatsApp et flux de réservation. Aucune complexité technique."
+    },
+    "step2": {
+      "title": "Formez votre agent IA",
+      "description": "Nous configurons vos véhicules, règles de prix, logique de disponibilité et critères de qualification."
+    },
+    "step3": {
+      "title": "Capturez des réservations 24/7",
+      "description": "Votre IA répond instantanément, qualifie les locataires, vérifie la disponibilité et envoie les demandes directement."
+    }
   }
 }

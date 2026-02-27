@@ -1,0 +1,51 @@
+.introContainer {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.introHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.introBadge {
+    background: var(--white);
+    color: var(--deep-blue);
+    padding: 8px 24px;
+    border-radius: 100px;
+    font-family: var(--font-inter), 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.005em;
+    text-transform: capitalize;
+    margin-bottom: 32px;
+    /* Vibrant blue glow aura from the design */
+    box-shadow: 0 0 25px var(--chat-glow-aura);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+}
+
+.introTitle {
+    font-family: var(--font-inter), 'Inter', sans-serif;
+    font-size: clamp(32px, 5vw, 44px);
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 24px;
+    letter-spacing: -0.035em;
+}
+
+.introDescription {
+    font-family: var(--font-inter), 'Inter', sans-serif;
+    font-size: 18px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
