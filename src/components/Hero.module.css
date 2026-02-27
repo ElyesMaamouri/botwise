@@ -7,11 +7,24 @@
     text-align: center;
     position: relative;
     background: var(--background);
+    isolation: isolate;
 }
 
 .glowWrapper {
+    pointer-events: none;
+    z-index: 0;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 1000px;
+    display: flex;
     position: absolute;
-    top: 50px;
+    top: -5%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%);
+    /* position: absolute;
+    top: -5%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -21,16 +34,14 @@
     align-items: flex-start;
     pointer-events: none;
     z-index: 0;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
 .glowContainer {
     position: relative;
     width: 140%;
     aspect-ratio: 1;
-    /* Keep it square or proportional to the glow */
     max-width: 1200px;
-    /* Limit size on giant screens */
     pointer-events: none;
     opacity: 0.95;
 }
@@ -106,7 +117,7 @@
     -webkit-text-fill-color: transparent;
     margin-bottom: 24px;
     text-shadow: 0px 4px 85px rgba(0, 0, 0, 0.61);
-    /* Adjusted shadow to be visible but realistic */
+
 }
 
 .description {
@@ -299,54 +310,28 @@
     position: relative;
 }
 
-.carContainer {
-    position: relative;
+.carDisplay {
     width: 100%;
-    height: auto;
-    visibility: hidden;
-    animation: carSlideIn 0.8s ease-out 1.2s forwards;
+    height: 320px;
+    background-image: url('/car.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--background);
+    background-blend-mode: screen;
+    margin-top: -20px;
+    position: relative;
+    z-index: 1;
+    mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
 }
 
-@keyframes carSlideIn {
-    0% {
-        visibility: visible;
-        margin-top: 30px;
-    }
-
-    100% {
-        visibility: visible;
+@media (max-width: 768px) {
+    .carDisplay {
+        height: 200px;
+        background-size: contain;
         margin-top: 0;
     }
-}
-
-.carImage {
-    width: 100%;
-    object-fit: cover;
-    height: 218px;
-    display: block;
-    mix-blend-mode: screen;
-    /* filter: brightness(1.4) contrast(3.5); */
-    opacity: 1;
-    mask-image: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, 1) 10%,
-            rgba(0, 0, 0, 1) 90%,
-            rgba(0, 0, 0, 0) 100%);
-    -webkit-mask-image: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0) 0%,
-            rgba(0, 0, 0, 1) 10%,
-            rgba(0, 0, 0, 1) 90%,
-            rgba(0, 0, 0, 0) 100%);
-}
-
-.carOverlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40%;
-    background: linear-gradient(to top, var(--background) 0%, transparent 100%);
-    pointer-events: none;
 }
 
 @media (max-width: 768px) {
@@ -390,7 +375,6 @@
     max-width: 1041px;
     margin: 0 auto;
     padding: 0 20px 40px;
-    /* Reduced from 80px */
     position: relative;
     z-index: 2;
 }
@@ -400,11 +384,6 @@
     width: 100%;
     border-radius: 16px;
     overflow: hidden;
-    /* border: 1px solid rgba(var(--blue-rgb), 0.25); */
-    /* box-shadow:
-        0 0 0 1px rgba(var(--blue-rgb), 0.1),
-        0 4px 63px 0 rgba(var(--blue-rgb), 0.61),
-        0 0 80px -20px rgba(var(--blue-rgb), 0.4); */
 }
 
 .dashboardImage {
@@ -582,9 +561,7 @@
 .trustedBySection {
     width: 100%;
     max-width: 900px;
-    /* Matches dashboardWrapper max-width */
     margin: 20px auto 0;
-    /* Reduced bottom margin to 0 */
     text-align: center;
     overflow: hidden;
 }
@@ -633,7 +610,6 @@
     width: auto;
     max-width: 100px;
     object-fit: contain;
-    /* Force transform to black first, then apply var(--text-muted) for perfect uniformity */
     filter: brightness(0) saturate(100%) invert(72%) sepia(12%) saturate(497%) hue-rotate(178deg) brightness(87%) contrast(83%);
     opacity: 1;
 }
@@ -643,7 +619,6 @@
     width: auto;
     max-width: 160px;
     object-fit: contain;
-    /* Force transform to black first, then apply var(--text-muted) for perfect uniformity */
     filter: brightness(0) saturate(100%) invert(72%) sepia(12%) saturate(497%) hue-rotate(178deg) brightness(87%) contrast(83%);
     opacity: 1;
 }

@@ -89,17 +89,7 @@ export default function Hero() {
                 </motion.div>
 
 
-                <div className={styles.carContainer}>
-                    <Image
-                        src="/car.webp"
-                        alt="Hero Car"
-                        width={1440}
-                        height={600}
-                        className={styles.carImage}
-                        priority
-                    />
-                    <div className={styles.carOverlay}></div>
-                </div>
+                <div className={styles.carDisplay} role="img" aria-label="Hero Car" />
 
                 {/* Dashboard Image with Play Button */}
                 <motion.div

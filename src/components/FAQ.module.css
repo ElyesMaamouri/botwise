@@ -1,7 +1,6 @@
 .faq {
-    padding: 100px 0;
-    background-color: #040822;
-    /* Matches design */
+    padding: var(--section-padding) 64px;
+    background-color: var(--background);
     position: relative;
 }
 

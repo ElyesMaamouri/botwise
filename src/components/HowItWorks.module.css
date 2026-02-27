@@ -1,8 +1,8 @@
 .howItWorks {
+    padding: var(--section-padding) 64px;
     background: var(--background);
     position: relative;
     overflow: hidden;
-
 }
 
 .localContainer {

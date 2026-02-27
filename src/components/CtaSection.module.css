@@ -1,5 +1,5 @@
 .ctaSection {
-    padding: 100px 0;
+    padding: var(--section-padding) 64px;
     background-color: var(--background);
     position: relative;
     overflow: hidden;

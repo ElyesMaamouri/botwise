@@ -1,9 +1,8 @@
 .analytics {
-    padding: 100px 20px;
+    padding: var(--section-padding) 20px;
     background: radial-gradient(117.59% 190.05% at 100% 0%, rgba(37, 209, 244, 0.08) 0%, rgba(37, 209, 244, 0) 100%), var(--background);
     position: relative;
     overflow: hidden;
-    margin: 64px 0;
 }
 
 
@@ -164,7 +163,7 @@
 
 @media (max-width: 1024px) {
     .analytics {
-        padding: 80px 20px;
+        padding: 100px 20px;
     }
 
     .grid {

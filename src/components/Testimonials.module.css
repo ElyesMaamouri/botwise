@@ -1,5 +1,5 @@
 .testimonials {
-    padding: 100px 0;
+    padding: var(--section-padding) 20px;
     background-color: #020617;
     /* Slate-950 */
     overflow: hidden;
@@ -112,7 +112,7 @@
 
 @media (max-width: 768px) {
     .testimonials {
-        padding: 60px 0;
+        padding: 100px 20px;
     }
 
     .testimonials::before,

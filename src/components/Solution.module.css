@@ -1,5 +1,5 @@
 .solution {
-    padding: 100px 20px;
+    padding: var(--section-padding) 20px;
     background: var(--background);
     position: relative;
     overflow: hidden;
@@ -273,9 +273,9 @@
 }
 
 @media (max-width: 1024px) {
-    .solution {
-        padding: 80px 20px;
-    }
+    /* .solution {
+        padding: 100px 20px;
+    } */
 
     .container {
         grid-template-columns: 1fr;
