@@ -4,6 +4,7 @@ import Solution from '@/components/Solution';
 import HowItWorks from '@/components/HowItWorks';
 import Analytics from '@/components/Analytics';
 import Pricing from '@/components/Pricing';
+import Testimonials from '@/components/Testimonials';
 import styles from '../page.module.css';
 
 export default function HomePage() {
@@ -15,6 +16,7 @@ export default function HomePage() {
             <HowItWorks />
             <Analytics />
             <Pricing />
+            <Testimonials />
         </main>
     );
 }

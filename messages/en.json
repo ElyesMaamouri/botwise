@@ -117,5 +117,42 @@
         "Priority support + monthly optimization"
       ]
     }
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "What they say about Botwise",
+    "description": "Real bookings. Real revenue growth.",
+    "reviews": [
+      {
+        "name": "Marc L.",
+        "role": "Owner, City Rent",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "name": "Sarah J.",
+        "role": "Manager, SpeedRental",
+        "content": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+        "name": "Julien D.",
+        "role": "Founder, LuxeCar",
+        "content": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      },
+      {
+        "name": "Emma W.",
+        "role": "Marketing, EcoDrive",
+        "content": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        "name": "Thomas B.",
+        "role": "CEO, Urban Wheels",
+        "content": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos."
+      },
+      {
+        "name": "Sophie K.",
+        "role": "Operations, Global Rent",
+        "content": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam."
+      }
+    ]
   }
 }

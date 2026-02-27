@@ -1,0 +1,133 @@
+.testimonials {
+    padding: 100px 0;
+    background-color: #020617;
+    /* Slate-950 */
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonials::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -15%;
+    width: 800px;
+    height: 800px;
+    background: url('/Ambient-Glows-2.svg') no-repeat center;
+    background-size: contain;
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.testimonials::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) translateX(-40%);
+    width: 1600px;
+    height: 1600px;
+    background: url('/Ambient-Glows-2.svg') no-repeat center;
+    background-size: contain;
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.localContainer {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.carouselContainer {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    height: 700px;
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent);
+}
+
+.marquee {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    user-select: none;
+}
+
+.marqueeContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    animation: scrollVertical 40s linear infinite;
+    padding: 10px 0;
+}
+
+.marqueeContentReverse {
+    animation: scrollVerticalReverse 40s linear infinite;
+}
+
+.marquee:hover .marqueeContent {
+    animation-play-state: paused;
+}
+
+@keyframes scrollVertical {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes scrollVerticalReverse {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 992px) {
+    .carouselContainer {
+        grid-template-columns: repeat(2, 1fr);
+        height: 500px;
+    }
+
+    .carouselContainer>div:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 60px 0;
+    }
+
+    .testimonials::before,
+    .testimonials::after {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .carouselContainer {
+        grid-template-columns: 1fr;
+        height: 600px;
+    }
+
+    .carouselContainer>div:nth-child(2) {
+        display: none;
+    }
+}
