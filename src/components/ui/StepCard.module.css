@@ -1,6 +1,6 @@
 .card {
-    background: #040822;
-    border: 1px solid #00A2FB;
+    background: var(--primary);
+    border: 1px solid var(--blue);
     border-radius: 16px;
     padding: 32px 24px;
     position: relative;
@@ -18,7 +18,7 @@
 
 .card:hover {
     transform: translateY(-5px);
-    border-color: rgba(37, 209, 244, 0.4);
+    border-color: rgba(var(--light-cyan-rgb), 0.4);
 }
 
 .iconContainer {
@@ -29,8 +29,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 16px;
-    background: linear-gradient(135deg, rgba(37, 209, 244, 0.3) 0%, rgba(37, 99, 235, 0.1) 100%);
-    border: 1px solid rgba(37, 209, 244, 0.3);
+    background: linear-gradient(135deg, rgba(var(--light-cyan-rgb), 0.3) 0%, rgba(37, 99, 235, 0.1) 100%);
+    border: 1px solid rgba(var(--light-cyan-rgb), 0.3);
     z-index: 2;
 }
 
@@ -46,7 +46,7 @@
     position: absolute;
     inset: 0;
     border-radius: 16px;
-    box-shadow: 0 0 30px rgba(37, 209, 244, 0.15);
+    box-shadow: 0 0 30px rgba(var(--light-cyan-rgb), 0.15);
     pointer-events: none;
 }
 
@@ -59,7 +59,7 @@
     font-family: var(--font-inter), 'Inter', sans-serif;
     font-size: 17.16px;
     font-weight: 600;
-    color: #FFFFFF;
+    color: var(--white);
     margin-bottom: 12px;
     line-height: 1.5;
     letter-spacing: 0;
@@ -69,7 +69,7 @@
     font-family: var(--font-inter), 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #94A3B8;
+    color: var(--text-muted);
     line-height: 1.5;
     margin: 0;
     letter-spacing: 0;
@@ -81,7 +81,7 @@
     left: 8px;
     font-size: 60px;
     font-weight: 700;
-    color: #FFFFFF;
+    color: var(--white);
     opacity: 0.05;
     line-height: 60px;
     pointer-events: none;
@@ -97,7 +97,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #25D1F4;
+    background: var(--light-cyan);
     opacity: 0.5;
     filter: blur(2px);
 }

@@ -28,7 +28,7 @@
 
 /* Ensure arrows stay white */
 .specialBtn span[class*="ctaArrows"] svg {
-    color: #ffffff !important;
+    color: var(--white) !important;
 }
 
 .stepsGrid {

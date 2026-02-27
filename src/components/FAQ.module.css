@@ -22,7 +22,7 @@
     margin-bottom: 0 !important;
 }
 
-/* Force left alignment for SectionHeader in FAQ */
+
 .faqHeader [class*="introHeader"] {
     align-items: flex-start !important;
     text-align: left !important;

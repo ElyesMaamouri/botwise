@@ -8,7 +8,9 @@
   --blue-rgb: 0, 162, 251;
   --cyan: #19B2CC;
   --light-cyan: #25D1F4;
+  --light-cyan-rgb: 37, 209, 244;
   --bright-blue: #33B5FF;
+  --gold: #F1C988;
 
   /* Gradients */
   --grad-start: #0A7DFE;
@@ -16,6 +18,7 @@
 
   /* Neutral / Text */
   --white: #ffffff;
+  --white-rgb: 255, 255, 255;
   --black: #000000;
   --background: #040822;
   --foreground: #f8fafc;

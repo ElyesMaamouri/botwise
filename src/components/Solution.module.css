@@ -32,10 +32,8 @@
     font-weight: 700;
     line-height: 20px;
     letter-spacing: -0.005em;
-    /* -0.5% */
     text-transform: capitalize;
     margin-bottom: 32px;
-    /* Vibrant blue glow aura from the design */
     box-shadow: 0 0 25px var(--chat-glow-aura);
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: inline-block;
@@ -49,16 +47,13 @@
     color: var(--white);
     margin-bottom: 24px;
     letter-spacing: -0.035em;
-    /* -3.5% */
 }
 
 .introDescription {
     font-family: var(--font-inter), 'Inter', sans-serif;
     font-size: 18px;
     color: var(--text-muted);
-
     line-height: 1.5;
-    /* 150% */
     font-weight: 400;
     letter-spacing: 0;
 }
@@ -121,7 +116,6 @@
 .featureCard {
     background: var(--card-bg);
     border: 1px solid var(--border-subtle);
-    /* #FFFFFF12 roughly */
     padding: 14px 18px;
     border-radius: 10px;
     display: flex;
@@ -219,7 +213,6 @@
 .message {
     max-width: 82%;
     padding: 11px 16px 11.9px;
-    /* Exact Figma padding */
     font-family: 'Plus Jakarta Sans', var(--font-plus-jakarta-sans), sans-serif;
     font-size: 13.6px;
     line-height: 20.4px;
@@ -229,30 +222,25 @@
     display: flex;
     flex-direction: column;
     gap: 3.48px;
-    /* Exact Figma gap */
 }
 
 .userMessage {
     align-self: flex-end;
     background: rgba(var(--blue-rgb), 0.1);
-    /* Exact 10% from image */
     color: var(--chat-user-text);
     border-color: rgba(var(--blue-rgb), 0.2);
     border-radius: 12px 12px 2px 12px;
-    /* Exact Figma radius */
+
 }
 
 .botMessage {
     align-self: flex-start;
     background: rgba(0, 0, 0, 0.05);
-    /* #000000 5% as per image */
     color: var(--title-white);
     border: 1px solid var(--chat-bot-gold);
     border-radius: 12px 12px 12px 2px;
     padding: 11.19px 20.03px 11.9px 16px;
-    /* Exact Figma padding */
     gap: 3.67px;
-    /* Exact Figma gap */
 }
 
 .time {
@@ -262,7 +250,6 @@
     line-height: 16.8px;
     margin-top: 10px;
     color: var(--chat-meta);
-    /* Exact Figma metadata color */
     font-weight: 300;
     letter-spacing: 0;
 }

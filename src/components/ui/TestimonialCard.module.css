@@ -1,6 +1,6 @@
 .card {
-    background: #040822;
-    border: 1px solid #25D1F4;
+    background: var(--primary);
+    border: 1px solid var(--light-cyan);
     border-radius: 10px;
     padding: 32px;
     display: flex;
@@ -12,19 +12,19 @@
 }
 
 .card:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: #0084ff;
+    background: rgba(var(--white-rgb), 0.05);
+    border-color: var(--blue);
     transform: translateY(-5px);
 }
 
 .stars {
     display: flex;
     gap: 4px;
-    color: #F1C988;
+    color: var(--gold);
 }
 
 .content {
-    color: #FFFFFF;
+    color: var(--white);
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -44,11 +44,11 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #0084ff, #00c6ff);
+    background: linear-gradient(135deg, var(--grad-start), var(--grad-end));
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--white);
     font-weight: 600;
     font-size: 0.9rem;
     overflow: hidden;
@@ -66,13 +66,13 @@
 }
 
 .name {
-    color: white;
+    color: var(--white);
     font-weight: 600;
     font-size: 0.95rem;
 }
 
 .role {
-    color: #6B7280;
+    color: var(--text-muted);
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;

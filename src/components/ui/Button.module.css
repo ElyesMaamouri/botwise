@@ -41,7 +41,7 @@
 
 .ctaArrows svg {
     margin-left: -10px;
-    color: #ffffff;
+    color: var(--white);
     transition: transform 0.3s ease, opacity 0.3s ease;
     animation: arrowStagger 1.5s infinite ease-in-out;
 }

@@ -80,12 +80,10 @@
     padding: 31px 40px 32px 40px;
     border-radius: 14px;
     background: #070A22;
-    /* Specific dark blue from Figma */
     border: 1px solid var(--border-subtle);
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /* Internal gap from Figma */
     transition: all 0.3s ease;
 }
 

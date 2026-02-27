@@ -89,7 +89,14 @@ export default function Hero() {
                 </motion.div>
 
 
-                <div className={styles.carDisplay} role="img" aria-label="Hero Car" />
+                <motion.div
+                    className={styles.carDisplay}
+                    role="img"
+                    aria-label="Hero Car"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+                />
 
                 {/* Dashboard Image with Play Button */}
                 <motion.div

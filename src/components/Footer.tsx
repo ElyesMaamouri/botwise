@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
         <footer className={styles.footer}>
             <div className={styles.localContainer}>
                 <div className={styles.grid}>
-                    {/* Brand & Socials Column */}
+                    {/*Socials Column */}
                     <div className={styles.brand}>
                         <div className={styles.logo}>
                             <Image

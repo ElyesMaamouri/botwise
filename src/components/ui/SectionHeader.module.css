@@ -23,7 +23,6 @@
     letter-spacing: -0.005em;
     text-transform: capitalize;
     margin-bottom: 32px;
-    /* Vibrant blue glow aura from the design */
     box-shadow: 0 0 25px var(--chat-glow-aura);
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: inline-block;

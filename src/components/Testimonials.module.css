@@ -1,7 +1,6 @@
 .testimonials {
     padding: var(--section-padding) 20px;
-    background-color: #020617;
-    /* Slate-950 */
+    background-color: var(--background);
     overflow: hidden;
     position: relative;
 }
