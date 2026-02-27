@@ -154,5 +154,32 @@
         "content": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam."
       }
     ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Questions fréquemment posées",
+    "description": "Tout ce que vous devez savoir avant de déployer votre agent de réservation IA.",
+    "items": [
+      {
+        "question": "Combien de temps faut-il pour configurer Botwise ?",
+        "answer": "La plupart des agences sont opérationnelles en 5 à 10 jours. Nous gérons la configuration, les intégrations et l'entraînement de l'IA. Vous continuez à gérer votre entreprise sans interruption."
+      },
+      {
+        "question": "Botwise s'intègre-t-il à mon système de réservation actuel ?",
+        "answer": "Oui. Nous connectons Botwise à votre site web, WhatsApp, CRM et flux de réservation. Les plans Pro incluent des intégrations API complètes pour une automatisation avancée."
+      },
+      {
+        "question": "L'IA remplacera-t-elle mon équipe ?",
+        "answer": "Non. Botwise gère les demandes répétitives, la qualification et la vérification des disponibilités. Votre équipe se concentre sur les clients confirmés et les interactions à haute valeur ajoutée."
+      },
+      {
+        "question": "Et si j'ai une grande flotte ?",
+        "answer": "Le plan Pro prend en charge jusqu'à 50 véhicules et des canaux illimités. Si vous opérez à plus grande échelle, nous pouvons proposer une configuration sur mesure."
+      },
+      {
+        "question": "Comment Botwise augmente-t-il mes réservations ?",
+        "answer": "En répondant instantanément, en qualifiant les locataires automatiquement et en guidant les clients étape par étape vers la confirmation. Un temps de réponse plus rapide = un taux de conversion plus élevé."
+      }
+    ]
   }
 }

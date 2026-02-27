@@ -1,0 +1,52 @@
+.faq {
+    padding: 100px 0;
+    background-color: #040822;
+    /* Matches design */
+    position: relative;
+}
+
+.localContainer {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    margin-top: 60px;
+    align-items: flex-start;
+}
+
+.faqHeader {
+    margin-bottom: 0 !important;
+}
+
+/* Force left alignment for SectionHeader in FAQ */
+.faqHeader [class*="introHeader"] {
+    align-items: flex-start !important;
+    text-align: left !important;
+}
+
+.faqHeader [class*="introDescription"] {
+    margin-left: 0 !important;
+}
+
+@media (max-width: 992px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .faqHeader [class*="introHeader"] {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .faqHeader [class*="introDescription"] {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        max-width: 100%;
+    }
+}

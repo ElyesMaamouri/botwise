@@ -154,5 +154,32 @@
         "content": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam."
       }
     ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know before deploying your AI booking agent.",
+    "items": [
+      {
+        "question": "How long does it take to set up Botwise?",
+        "answer": "Most agencies are fully operational within 5 to 10 days. We handle the configuration, integrations, and AI training. You keep running your business without disruption."
+      },
+      {
+        "question": "Does Botwise integrate with my existing booking system?",
+        "answer": "Yes. We connect Botwise to your website, WhatsApp, CRM, and booking workflow. Pro plans include full API integrations for advanced automation."
+      },
+      {
+        "question": "Will the AI replace my team?",
+        "answer": "No. Botwise handles repetitive inquiries, qualification, and availability checks. Your team focuses on confirmed renters and higher-value interactions."
+      },
+      {
+        "question": "What if I have a large fleet?",
+        "answer": "The Pro plan supports up to 50 vehicles and unlimited channels. If you operate at a larger scale, we can provide a custom setup."
+      },
+      {
+        "question": "How does Botwise increase my bookings?",
+        "answer": "By responding instantly, qualifying renters automatically, and guiding customers step-by-step toward confirmation. Faster response time = higher conversion rate."
+      }
+    ]
   }
 }

@@ -46,6 +46,7 @@
   --chat-user-text: #C0BBB4;
   --chat-bot-gold: rgba(232, 201, 126, 0.2);
   --chat-glow-aura: rgba(0, 162, 251, 0.5);
+  --icon-gray: #686F7A;
 
   /* Layout */
   --max-width: 1200px;
