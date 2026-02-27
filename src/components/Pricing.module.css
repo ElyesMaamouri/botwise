@@ -1,6 +1,6 @@
 .pricing {
     padding: 100px 20px;
-    background: var(--background);
+    background: radial-gradient(circle at 50% 50%, rgba(37, 209, 244, 0.08) 0%, transparent 60%), var(--background);
     position: relative;
     overflow: hidden;
 }
