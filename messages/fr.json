@@ -50,5 +50,28 @@
       "title": "Capturez des réservations 24/7",
       "description": "Votre IA répond instantanément, qualifie les locataires, vérifie la disponibilité et envoie les demandes directement."
     }
+  },
+  "analytics": {
+    "badge": "L'ANALYTIQUE",
+    "title": "Suivez chaque conversation. Mesurez chaque réservation.",
+    "description": "Obtenez une visibilité en temps réel sur les demandes, les locataires qualifiés et les réservations confirmées — le tout dans un tableau de bord puissant.",
+    "features": {
+      "analytics": {
+        "title": "Analyse des conversations en direct",
+        "description": "Suivi par IA en temps réel de chaque interaction."
+      },
+      "conversion": {
+        "title": "Suivi des conversions de réservation",
+        "description": "Surveillance du ROI basée sur les données pour toutes les réservations."
+      },
+      "insights": {
+        "title": "Aperçu des locataires qualifiés",
+        "description": "Scoring des leads à l'échelle pour identifier les meilleurs prospects."
+      },
+      "reporting": {
+        "title": "Rapport sur l'impact des revenus",
+        "description": "Transparence financière avec des rapports d'impact détaillés."
+      }
+    }
   }
 }

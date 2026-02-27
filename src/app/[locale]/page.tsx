@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Solution from '@/components/Solution';
 import HowItWorks from '@/components/HowItWorks';
+import Analytics from '@/components/Analytics';
 import styles from '../page.module.css';
 
 export default function HomePage() {
@@ -11,6 +12,7 @@ export default function HomePage() {
             <Hero />
             <Solution />
             <HowItWorks />
+            <Analytics />
         </main>
     );
 }

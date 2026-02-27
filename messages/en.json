@@ -50,5 +50,28 @@
       "title": "Start Capturing Bookings 24/7",
       "description": "Your AI responds instantly, qualifies renters, checks availability, and sends confirmed booking requests directly to your team."
     }
+  },
+  "analytics": {
+    "badge": "THE ANALYTICS",
+    "title": "Track Every Conversation. Measure Every Booking.",
+    "description": "Get real-time visibility into inquiries, qualified renters, and confirmed bookings — all in one powerful dashboard.",
+    "features": {
+      "analytics": {
+        "title": "Live conversation analytics",
+        "description": "Real-Time AI stream tracking every interaction."
+      },
+      "conversion": {
+        "title": "Booking conversion tracking",
+        "description": "Data-driven ROI monitoring for all bookings."
+      },
+      "insights": {
+        "title": "Qualified renter insights",
+        "description": "Lead scoring at scale to identify top prospects."
+      },
+      "reporting": {
+        "title": "Revenue impact reporting",
+        "description": "Financial transparency with detailed impact reports."
+      }
+    }
   }
 }
